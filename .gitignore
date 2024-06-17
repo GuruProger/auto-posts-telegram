@@ -1,8 +1,7 @@
-core/data
-all_file
+venv
+core
 config
 .env
 .idea
 __pycache__
-test
-test.py
+core/data
