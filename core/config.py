@@ -7,11 +7,13 @@ from dotenv import load_dotenv
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
 def _checking_folder():
-    data_path = Path(__file__).resolve().parent / 'data'
-    if not data_path.exists():
-        data_path.mkdir()
-    logger.info('Путь для сохранения постов: %s', data_path)
+	data_path = Path(__file__).resolve().parent / 'data'
+	if not data_path.exists():
+		data_path.mkdir()
+	logger.info('Путь для сохранения постов: %s', data_path)
+
 
 project_path = Path(__file__).resolve().parent.parent
 _checking_folder()
